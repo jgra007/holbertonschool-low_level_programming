@@ -1,4 +1,4 @@
-nclude "holberton.h"
+#include "holberton.h"
 
 /**
  * _puts - prints a strin followed by a new line
