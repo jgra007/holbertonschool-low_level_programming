@@ -4,13 +4,13 @@
  * rev_string - reverse a string
  * @s: variable that contain a reserved string
  */
-void rev:string(char *s)
+void rev_string(char *s)
 {
 	int a;
 	int len;
 	char c;
 
-	len = 0
+	len = 0;
 	for (a = 0; s[a] != '\0'; a++)
 		len++;
 
