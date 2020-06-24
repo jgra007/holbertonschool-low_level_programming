@@ -8,7 +8,7 @@ void rev:string(char *s)
 {
 	int a;
 	int len;
-	int c;
+	char c;
 
 	len = 0
 	for (a = 0; s[a] != '\0'; a++)
