@@ -5,7 +5,7 @@
  * @dest: variable where the string will be stored
  * @src: variable that will store the second string
  * @n: variable that conatins the lenght of the bytes to be used
- * Return: dest 
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
