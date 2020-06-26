@@ -23,7 +23,7 @@ char *cap_string(char *s)
 
 	char sep[13] = {' ', '\t', '\n', ',', ';', '.',
 		'!', '?', '"', '(', ')', '{', '}'};
-	for (i = 0; s[i] != '\0' ; a++)
+	for (i = 0; s[i] != '\0' ; i++)
 	{
 		if (i == 0 && _isalphalower(s[i]))
 			s[i] -= 32;
