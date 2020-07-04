@@ -51,7 +51,10 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	
+	unsigned int n1;
+        unsigned int n2;
+	int result;
+
 	if (!(argc == 3))
 	{
 		printf("Error\n");
@@ -59,9 +62,10 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-	unsigned int n1 = _atoi(argv[1]);
-	unsigned int n2 = _atoi(argv[2]);
-	int result = n1 * n2;
+	n1 = _atoi(argv[1]);
+	n2 = _atoi(argv[2]);
+	result = n1 * n2;
+
 	printf("%d\n", result);
 	}
 	
