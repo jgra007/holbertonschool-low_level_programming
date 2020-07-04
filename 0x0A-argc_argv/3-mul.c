@@ -51,23 +51,21 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	unsigned int n1;
-        unsigned int n2;
-	int result;
+	int n1;
+	int n2;
+	int product;
 
 	if (!(argc == 3))
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
+
 	n1 = _atoi(argv[1]);
 	n2 = _atoi(argv[2]);
-	result = n1 * n2;
+	product = n1 * n2;
 
-	printf("%d\n", result);
-	}
-	
+	printf("%d\n", product);
+
 	return (0);
 }
