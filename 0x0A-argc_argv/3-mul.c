@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdlib.h>
+#include "stdlib.h"
 #include <stdio.h>
 
 /**
@@ -12,16 +12,17 @@
 int main(int argc, char *argv[])
 {
 	
-	if (argc < 2)
+	if (!(argc == 3))
 	{
-	printf("Error\n");
+		printf("Error\n");
+		return (1);
 	}
-	else 
+	else
 	{
 	unsigned int n1 = atoi(argv[1]);
 	unsigned int n2 = atoi(argv[2]);
 	printf("%d\n", n1 * n2);
-		
 	}
+	
 	return (0);
 }
