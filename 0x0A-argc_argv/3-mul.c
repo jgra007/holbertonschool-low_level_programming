@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 	{
 	unsigned int n1 = _atoi(argv[1]);
 	unsigned int n2 = _atoi(argv[2]);
-	result = n1 * n2;
+	int result = n1 * n2;
 	printf("%d\n", result);
 	}
 	
