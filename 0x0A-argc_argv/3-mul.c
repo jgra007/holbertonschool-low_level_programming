@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 {
 	int n1;
 	int n2;
-	int product;
+	int result;
 
 	if (!(argc == 3))
 	{
@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 
 	n1 = _atoi(argv[1]);
 	n2 = _atoi(argv[2]);
-	product = n1 * n2;
+	result = n1 * n2;
 
 	printf("%d\n", product);
 
