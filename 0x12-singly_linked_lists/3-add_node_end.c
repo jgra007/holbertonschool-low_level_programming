@@ -4,9 +4,10 @@
 #include <stdlib.h>
 
 /**
- * _strlen - returns a string
- * @s: integer to be used
- * Return: length of string
+ *add_node_end - Add a new node
+ *@head: head of pointer
+ *@str: string
+ *Return: addres
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -32,12 +33,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node->len = i;
 	new_node->next = NULL;
 
-	if(*head == NULL)
+	if (*head == NULL)
 	{
 		*head = new_node;
 		return (new_node);
 	}
-	
+
 	while (tail->next != NULL)
 		tail = tail->next;
 
