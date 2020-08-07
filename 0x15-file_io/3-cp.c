@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	if (file_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-	exit(99);
+		exit(99);
 	}
 	r = read(file_from, buf, 1024);
 	while (r > 0)
@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 	if (r == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
+		exit(99);
 	}
 	if (close(file_to))
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to), exit(100);
