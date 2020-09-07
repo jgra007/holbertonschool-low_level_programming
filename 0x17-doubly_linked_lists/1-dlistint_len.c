@@ -1,17 +1,21 @@
 #include "lists.h"
 
 /**
- * dlistint_len - Number of elements in a linked dlistint_t list
- * @h: Head of the linked list
- * Return: Number of elements
- **/
+ * dlistint_len - returns the number of elements in a linked list
+ * @h: head of linked list
+ *
+ * Return: number of elements in linked list
+ */
 size_t dlistint_len(const dlistint_t *h)
-
 {
-    size_t elements;
+	const dlistint_t *copy = h;
+	size_t i = 0;
 
-    for (elements = 0; h != NULL; h = h->next, elements++)
-        ;
+	while (copy)
+	{
+		copy = copy->next;
+		i++;
+	}
 
-    return (elements);    
+	return (i);
 }
