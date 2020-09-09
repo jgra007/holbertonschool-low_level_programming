@@ -1,6 +1,7 @@
 #ifndef FILE_HOLBERTON
 #define FILE_HOLBERTON
 #include<stdlib>
+#include<stdio>
 
 int _putchar(char c);
 int _islower(int c);
